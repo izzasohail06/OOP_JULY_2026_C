@@ -6,7 +6,7 @@ class Triangle{
     private boolean isIso;
     private boolean isScal;
     private boolean isEqual;
-    private int count;
+    private static int count;
     private double p;
 
     //null constructor
@@ -110,7 +110,7 @@ class Triangle{
     }
 
     //object count
-    private double objectCount(){
+    private static double objectCount(){
         return this.count;
     }
 
@@ -129,5 +129,6 @@ class Triangle{
         System.out.println("Scalene Triangle: " +isScal);
         System.out.println("Equilateral Triangle: " + isEqual);
         System.out.println("Object Count: " +count);
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
     }
 }
