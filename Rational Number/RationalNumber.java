@@ -83,6 +83,7 @@ class RationalNumber{
     public void display(){
         System.out.println("Numerator: " +this.numerator);
         System.out.println("Denominator: " +this.denominator);
+        System.out.println(".............................");
         
         
     }
