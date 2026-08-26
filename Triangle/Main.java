@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         Triangle t1 = new Triangle();
         Triangle t2 = new Triangle(3);
-        Triangle t3 = new Triangle(2,4);
-        Triangle t4 = new Triangle(8,6, 10);
+        Triangle t3 = new Triangle(2, 4);
+        Triangle t4 = new Triangle(8, 6, 10);
         Triangle t5 = new Triangle(t3);
         // t3.isRightAngle();
         // t3.isIsosceles();
@@ -34,8 +34,7 @@ public class Main {
         t5.perimeter();
         t5.toString();
         t5.display();
-    
-        
+
     }
-    
+
 }
