@@ -1,4 +1,4 @@
-public class PointLine {
+class PointLine {
     private Point p1;
     private Point p2;
     private double length;
