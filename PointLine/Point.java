@@ -1,4 +1,4 @@
-public class Point {
+class Point {
     private double x;
     private double y;
     private double distance;
