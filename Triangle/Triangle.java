@@ -111,7 +111,7 @@ class Triangle{
 
     //object count
     private static double objectCount(){
-        return this.count;
+        return count;
     }
 
     //toSring method
