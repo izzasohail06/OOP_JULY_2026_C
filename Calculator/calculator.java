@@ -1,21 +1,29 @@
-class calculator{
+class Calculator{
     private double num1;
     private double num2;
     private double result;
     private double ans;
 
     //null constructor
-    calculator(){
+    Calculator(){
         this.num1 = 0;
         this.num2 = 0;
         this.result = 0;
     }
     //parameterized constructor
-    calculator(double num1, double num2, double result){
+    Calculator(double num1, double num2, double result){
         this.num1 = num1;
         this.num2 = num2;
         this.result = result;
     }
+
+    //copy constructor
+    Calculator(Calculator obj){
+        this.num1 = obj.num1;
+        this.num2 = obj.num2;
+        this.result = obj.result;
+    }
+    
     //main operations
     public double sol( double num1, double num2, char op){
         this.num1 = num1;
@@ -56,6 +64,7 @@ class calculator{
     return this.result = 0;
 
     }
+
     //continue operation
     public void contSol(double num2, char op){
         sol(ans,num2,op);
