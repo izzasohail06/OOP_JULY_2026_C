@@ -1,4 +1,6 @@
-class Date{
+package Employee;
+
+public class Date {
     private int year;
     private int date;
     private int month;
@@ -49,7 +51,7 @@ class Date{
         if (this.year < 1 || this.month < 1 || this.month > 12 || this.date < 1) {
             return false;
         }
-        return this.date;
+        return true;
     }
 
     //Days in Month
@@ -91,5 +93,4 @@ class Date{
     public String toString(){
         return "" + this.date + "-" + this.month + "-" + this.year + "" ;
     }
-
 }
