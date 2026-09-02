@@ -1,29 +1,33 @@
 class Point {
     private double x;
     private double y;
-    private double distance;
 
+    //null constructor
     Point(){
         this.x = 3;
         this.y = 3;
     }
 
+    //parameterized constructor
     Point(double x, double  y){
         this.x = x;
         this.y = y;
 
     }
     
+    //copy constructor
     Point(Point p){
         this.x = p.x;
         this.y = p.y;
     }
 
+    //setter
     public void set(double x, double y){
         this.x = x;
         this.y = y;
     }
     
+    //getter
     public double get_x(){
         return this.x;
     }
@@ -31,32 +35,40 @@ class Point {
         return this.y;
     }
 
-    public void add(Point n){
-        this.x += n.x;
-        this.y += n.y;
-    }
-    public void add(Point n , Point m ){
-        this.x = n.x + m.x;
-        this.y = n.y + m.y;
+    //add function
+
+    // public void add(Point n){
+    //     this.x += n.x;
+    //     this.y += n.y;
+    // }
+    public Point add(Point n , Point m ){
+        double a = n.x + m.x;
+        double b = n.y + m.y;
+        return new Point(a,b);
     }
 
-    public void sub(Point n){
-        this.x -= n.x;
-        this.y -= n.y;
+    //subtract function
+
+    // public void sub(Point n){
+    //     this.x -= n.x;
+    //     this.y -= n.y;
+    // }
+    public Point sub(Point n , Point m ){
+        double a = n.x - m.x;
+        double b = n.y - m.y;
+        return new Point(a,b);
     }
-    public void sub(Point n , Point m ){
-        this.x = n.x - m.x;
-        this.y = n.y - m.y;
-    }
-    public void distance(Point n , Point m){
+
+    //distance function
+    public double distance(Point n , Point m){
         double solve = Math.pow(m.x - n.x, 2) + Math.pow(m.y - n.y, 2);
-        this.distance = Math.sqrt(solve);
+        return Math.sqrt(solve);
 
     }
     public void display(){
         System.out.println("x ==>" + this.x);
         System.out.println("y ==>" + this.y);
-        System.out.println("distance ==> " + this.distance);
+   
     }
 
     public String toString(){
