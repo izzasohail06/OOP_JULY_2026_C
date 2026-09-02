@@ -53,29 +53,25 @@ class PointLine {
     //     double y = p2.get_y() - p1.get_y();
     //     this.length = Math.sqrt(x * x + y * y);
     // }
-    public double calculateLength(Point n){
-        double a = this.ge
-        return 0;
-    }
 
     //midpoint
     public Point midpoint(){
-        double x = (p1.get_x() + p2.get_x()) / 2;
-        double y = (p1.get_y() + p2.get_y()) / 2;
+        double x = (p1.getX() + p2.getX()) / 2;
+        double y = (p1.getY() + p2.getY()) / 2;
         return new Point(x, y);
         
     }
 
     //check horizontal
     public boolean isHorizontal(){
-        
-        return p1.get_y() == p2.get_y();
+        count++;
+        return p1.getX() == p2.getX();
     }
 
     // check vertical
     public boolean isVertical(){
         count++;
-        return p1.get_x() == p2.get_x();
+        return p1.getY() == p2.getY();
     }
 
     // display
@@ -95,6 +91,6 @@ class PointLine {
     // toString
     public String toString(){
 
-        return "p1 = " + p1 + "\np2 = " + p2 +"\nlength = " + length ;
+        return "p1: " + p1 + "\np2: " + p2 +"\nlength: " + length ;
     }
 }

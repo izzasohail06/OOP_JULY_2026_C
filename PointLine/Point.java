@@ -1,4 +1,3 @@
-// package PointLine;
 class Point {
     private double x;
     private double y;
@@ -29,10 +28,10 @@ class Point {
     }
     
     //getter
-    public double get_x(){
+    public double getx(){
         return this.x;
     }
-    public double get_y(){
+    public double gety(){
         return this.y;
     }
 
