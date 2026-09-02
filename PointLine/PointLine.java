@@ -48,17 +48,18 @@ class PointLine {
     }
 
     //calculate length
-    public void calculateLength(){
-        double x = p2.get_x() - p1.get_x();
-        double y = p2.get_y() - p1.get_y();
-
-        this.length = Math.sqrt(x * x + y * y);
-        count++;
+    // public void calculateLength(){
+    //     double x = p2.get_x() - p1.get_x();
+    //     double y = p2.get_y() - p1.get_y();
+    //     this.length = Math.sqrt(x * x + y * y);
+    // }
+    public double calculateLength(Point n){
+        double a = this.ge
+        return 0;
     }
 
     //midpoint
     public Point midpoint(){
-        count++;
         double x = (p1.get_x() + p2.get_x()) / 2;
         double y = (p1.get_y() + p2.get_y()) / 2;
         return new Point(x, y);
@@ -67,7 +68,7 @@ class PointLine {
 
     //check horizontal
     public boolean isHorizontal(){
-        count++;
+        
         return p1.get_y() == p2.get_y();
     }
 
