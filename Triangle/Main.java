@@ -19,21 +19,21 @@ public class Main {
         // t4.toString();
         // t4.display();
 
-        // t2.isRightAngle();
-        // t2.isIsosceles();
-        // t2.isScalene();
-        // t2.isEquilateral();
-        // t2.perimeter();
-        // t2.toString();
-        // t2.display();
+        t2.isRightAngle();
+        t2.isIsosceles();
+        t2.isScalene();
+        t2.isEquilateral();
+        t2.perimeter();
+        t2.toString();
+        t2.display();
 
-        t5.isRightAngle();
-        t5.isIsosceles();
-        t5.isScalene();
-        t5.isEquilateral();
-        t5.perimeter();
-        t5.toString();
-        t5.display();
+        // t5.isRightAngle();
+        // t5.isIsosceles();
+        // t5.isScalene();
+        // t5.isEquilateral();
+        // t5.perimeter();
+        // t5.toString();
+        // t5.display();
 
     }
 
