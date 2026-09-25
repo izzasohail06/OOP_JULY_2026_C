@@ -69,6 +69,26 @@ class RationalNumber{
         
     }
 
+    // Greatest Common Divisor
+    public RationalNumber gcd(int a, int b){
+        while(b != 0){
+            int temp = a % b;
+            a = b;
+            b = temp;
+        }
+        return new RationalNumber(a,b);
+    }
+
+    //rationalize
+    public RationalNumber rationalize(int a, int b){
+        this.numerator = a;
+        this.denominator = b;
+        int gcd = gcd(a,b).get_numerator();
+        int n = this.numerator / gcd;
+        int d = this.denominator / gcd;
+        return new RationalNumber(n,d);
+    }
+
     //reciprocal
     public RationalNumber reciprocate() {
         return new RationalNumber(denominator, numerator);
@@ -83,8 +103,5 @@ class RationalNumber{
     public void display(){
         System.out.println("Numerator: " +this.numerator);
         System.out.println("Denominator: " +this.denominator);
-        System.out.println(".............................");
-        
-        
     }
 }
